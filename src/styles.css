@@ -1,7 +1,13 @@
 /* Hide Lovable badge */
 #lovable-badge,
 #lovable-badge-container,
+#lovable-badge-root,
 [id^="lovable-badge"],
-a[href*="lovable.dev"] {
+[class*="lovable-badge"],
+a[href*="lovable.dev"],
+iframe[src*="lovable.dev"] {
   display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
